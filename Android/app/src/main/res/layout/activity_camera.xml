@@ -1,0 +1,94 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textView"
+    android:layout_centerHorizontal="true"
+    android:background="@color/skyyy"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="98dp"
+
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:imeOptions="actionGo"
+        android:inputType="textUri"
+        android:fontFamily="@font/maple"
+        android:hint=" ip 입력 (예시 192.168.76.247)" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="113dp"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue3"
+        android:fontFamily="@font/maple"
+        android:onClick="onClick"
+        android:text="연결"
+        android:textSize="25dp" />
+  </LinearLayout>
+
+  <WebView
+      android:id="@+id/webView"
+      android:fontFamily="@font/maple"
+      android:layout_width="match_parent"
+      android:layout_height="478dp" />
+
+
+  <LinearLayout
+      android:fontFamily="@font/maple"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="horizontal">
+
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/motor_btn"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="15dp"
+      android:backgroundTint="@color/white"
+      android:textColor="@color/blue3"
+      android:fontFamily="@font/maple"
+      android:onClick="onClickBackMain"
+      android:text="Motor"
+      android:textSize="25dp"
+      />
+
+  <Button
+      android:id="@+id/back"
+      android:fontFamily="@font/maple"
+      android:layout_width="match_parent"
+      android:layout_height="65dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:textSize="25dp"
+      android:onClick="onClickBackMain"
+      android:backgroundTint="@color/blue2"
+      android:text="뒤로" />
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal">
+
+
+
+  </RelativeLayout>
+</LinearLayout>

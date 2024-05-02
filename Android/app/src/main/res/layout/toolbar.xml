@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#87CEFA"
+    android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Osito"
+        android:fontFamily="@font/maple"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        />
+
+</androidx.appcompat.widget.Toolbar>

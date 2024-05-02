@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/skyyy"
+    tools:context=".activity_temp">
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/maple "
+            android:id="@+id/tvReceive"
+            android:gravity="center"
+            android:textSize="45dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dht"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="40"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/blue3"
+            android:fontFamily="@font/maple"
+            android:onClick="onClick"
+            android:text="온습도"
+            tools:ignore="OnClick">
+
+        </Button>
+
+        <Button
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/blue3"
+            android:fontFamily="@font/maple"
+            android:textSize="18dp"
+            android:onClick="onClick"
+            android:text="체온"
+            tools:ignore="OnClick">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/blue2"
+        android:fontFamily="@font/maple"
+        android:onClick="onClick"
+        android:text="뒤로"
+        android:textSize="25dp"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
